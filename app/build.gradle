@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId 'com.app.riyazulquran7line'
+        minSdkVersion 14
+        targetSdkVersion 30
+        versionCode 10
+        versionName "1.9"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    lintOptions { checkReleaseBuilds false }
+}
+
+dependencies
+        {
+            implementation fileTree(include: ['*.jar'], dir: 'libs')
+            implementation 'com.android.support:support-v4:22.0.0'
+            implementation files('libs/nineoldandroids-2.4.0.jar')
+            implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+        }

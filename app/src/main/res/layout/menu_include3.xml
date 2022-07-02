@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_marginTop="0dip"
+    android:orientation="horizontal" android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+
+    >
+
+    <RelativeLayout android:id="@+id/menu5" android:background="@color/primary" android:orientation="vertical" android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+
+        >
+
+
+        <LinearLayout  android:layout_centerInParent="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_width="wrap_content"  android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content" android:id="@+id/img1"
+                android:src="@drawable/bookmark"
+                />
+            <com.fonts.CipherBold android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content" android:layout_marginTop="10dip" android:text="نشاندہی" android:id="@+id/text1_urdu"
+                android:textColor="@color/textbrown" android:layout_below="@id/img1" android:textSize="@dimen/menuitemsize"
+
+                />
+            <com.fonts.CipherBold android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content" android:layout_marginTop="0dip" android:text="BOOKMARK" android:id="@+id/text1"
+                android:textColor="@color/textbrown" android:layout_below="@id/text1_urdu" android:textSize="@dimen/menuitemsize"
+
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/menu6" android:layout_marginLeft="2dip"  android:background="@color/primary" android:orientation="vertical" android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+
+        <LinearLayout android:layout_centerInParent="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_width="wrap_content"  android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content" android:id="@+id/img2"
+                android:src="@drawable/help"
+                />
+            <com.fonts.CipherBold android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content" android:text="مدد" android:id="@+id/text2_urdu"
+                android:textColor="@color/textbrown" android:layout_below="@id/img2"
+                android:layout_marginTop="10dip"
+                android:textSize="@dimen/menuitemsize"
+                />
+            <com.fonts.CipherBold android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content" android:text="Help" android:id="@+id/text2"
+                android:textColor="@color/textbrown" android:layout_below="@id/text2_urdu"
+                android:layout_marginTop="0dip"
+                android:textSize="@dimen/menuitemsize"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

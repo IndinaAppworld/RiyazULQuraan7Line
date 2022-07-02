@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+
+
+
+
+
+
+	<LinearLayout
+		android:id="@+id/headarlayput"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RelativeLayout
+			android:id="@+id/heaerMain"
+			android:background="@drawable/topbanner"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/back_arow_white"
+				android:layout_centerVertical="true"
+				android:id="@+id/backicon"
+				android:layout_marginLeft="5dp"
+				/>
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/iconup"
+				android:layout_centerVertical="true"
+				android:id="@+id/iconup" android:layout_toRightOf="@id/backicon"
+				android:layout_marginLeft="5dp"
+				/>
+
+
+			<!--<quraanapp.com.fonts.BlackCherryFont-->
+				<!--android:layout_width="wrap_content"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:text="QUR-AAN-E-KAREEM"-->
+				<!--android:textColor="#ffffff"-->
+				<!--android:textStyle="bold"-->
+				<!--android:id="@+id/TITLE"-->
+				<!--android:textSize="@dimen/menuitemsize"-->
+				<!--android:layout_centerInParent="true"-->
+				<!--/>-->
+
+
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:id="@+id/fav"
+				android:src="@drawable/faxsel"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="5dp"
+				android:layout_height="wrap_content" />
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/icondown"
+				android:layout_centerVertical="true"
+				android:id="@+id/icondown"
+				android:layout_toLeftOf="@id/fav"
+				android:layout_marginRight="5dp"
+				/>
+
+<!--			<com.fonts.CipherNormal-->
+<!--				android:layout_width="wrap_content"-->
+<!--				android:layout_height="wrap_content"-->
+<!--				android:layout_centerInParent="true"-->
+<!--				android:text="Riyaz-ul-Quran"-->
+<!--				android:textColor="#ffffff"-->
+<!--				android:textSize="@dimen/menuitemsize" />-->
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/titleheader"
+				android:layout_centerHorizontal="true"
+				android:id="@+id/headericon"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="5dp"
+				/>
+		</RelativeLayout>
+	</LinearLayout>
+
+	<com.github.barteksc.pdfviewer.PDFView
+		android:id="@+id/pdfView"
+		android:layout_below="@id/headarlayput"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+</RelativeLayout>
