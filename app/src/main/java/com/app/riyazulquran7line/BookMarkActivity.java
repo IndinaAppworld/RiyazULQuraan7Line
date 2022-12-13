@@ -238,9 +238,6 @@ public class BookMarkActivity extends Activity {
                 {
                     finish();
                 }
-
-
-
             }
         });
 
